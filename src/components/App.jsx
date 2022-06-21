@@ -1,5 +1,5 @@
 import React from "react";
-
+// meanings of emoji
 function App() {
   return (
     <div>
