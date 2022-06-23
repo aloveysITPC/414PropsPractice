@@ -1,16 +1,16 @@
 import React from "react";
 import Emoji from "./Emoji";
 
-function Entry() {
+function Entry(props) {
   return (
     <div className="term">
       <dt>
-        <Emoji />
+        <span className="emoji" role="img" aria-label="Tense Biceps">
+          {props.emoji}
+        </span>
+        <span>{props.name}</span>
       </dt>
-      <dd>
-        “You can do that!” or “I feel strong!” Arm with tense biceps. Also used
-        in connection with doing sports, e.g. at the gym.
-      </dd>
+      <dd>{props.description}</dd>
     </div>
   );
 }
